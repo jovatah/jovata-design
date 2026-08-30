@@ -8,7 +8,7 @@ export default function ThoughtfulInteriorsArticle() {
       <article>
         <section className="relative h-[620px] overflow-hidden">
           <Image
-            src="/images/project-1.jpg"
+            src="/images/pent1-bath1.jpg"
             alt="Thoughtful modern interior"
             fill
             priority

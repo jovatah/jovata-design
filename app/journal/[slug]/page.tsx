@@ -21,7 +21,7 @@ const articles = {
   title: "The Value Of Restraint In Modern Interiors",
   description:
     "An article on why restraint creates calmer, more refined and longer-lasting interiors.",
-  image: "/images/project-12.jpg",
+  image: "/images/project-5.jpg",
   publishedTime: "2026-06-19",
   author: "Jovata Interiors",
   component: <ValueOfRestraintArticle />,
@@ -31,7 +31,7 @@ const articles = {
     title: "How To Begin An Interior Project",
     description:
       "A practical guide to establishing clarity, purpose and direction before design begins.",
-    image: "/images/project-4.jpg",
+    image: "/images/penthouseb1.jpg",
     publishedTime: "2026-07-11",      author: "Jovata Interiors",
     component: <HowToBeginInteriorProjectArticle />,
   },
@@ -40,7 +40,7 @@ const articles = {
     title: "Smart Living Should Feel Invisible",
     description:
       "Why smart living technology should support comfort quietly without overwhelming the home.",
-    image: "/images/project-2.jpg",
+    image: "/images/project-14.jpg",
     publishedTime: "2026-05-23",
     author: "Jovata Interiors",
     component: <SmartLivingInvisibleArticle />,
@@ -50,7 +50,7 @@ const articles = {
     title: "Why Thoughtful Interiors Matter",
     description:
       "A guide to why proportion, comfort, material choices and planning shape better living.",
-    image: "/images/project-1.jpg",
+    image: "/images/pent1-bath1.jpg",
     publishedTime: "2026-06-02",
     author: "Jovata Interiors",
     component: <WhyThoughtfulInteriorsMatterArticle />,

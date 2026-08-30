@@ -9,7 +9,7 @@ export default function ValueOfRestraintArticle() {
       <article>
         <section className="relative h-[620px] overflow-hidden">
           <Image
-            src="/images/project-12.jpg"
+            src="/images/project-5.jpg"
             alt="Restrained modern interior"
             fill
             priority

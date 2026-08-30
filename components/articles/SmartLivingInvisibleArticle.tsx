@@ -8,7 +8,7 @@ export default function SmartLivingArticle() {
       <article>
         <section className="relative h-[620px] overflow-hidden">
           <Image
-            src="/images/project-2.jpg"
+            src="/images/project-14.jpg"
             alt="Smart living interior"
             fill
             priority

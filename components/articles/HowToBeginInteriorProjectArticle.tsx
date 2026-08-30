@@ -9,7 +9,7 @@ export default function HowToBeginInteriorProjectArticle() {
       <article>
         <section className="relative h-[620px] overflow-hidden">
           <Image
-            src="/images/project-4.jpg"
+            src="/images/penthouseb1.jpg"
             alt="Interior project planning"
             fill
             priority
