@@ -11,8 +11,8 @@ const cormorant = Cormorant_Garamond({
 
 const heroImages = [
   "/images/hero.jpg",
-  "/images/project-12.jpg",
-  "/images/project-4.jpg",
+  "/images/project-13.jpg",
+  "/images/project-7.jpg",
 ];
 
 export default function Hero() {

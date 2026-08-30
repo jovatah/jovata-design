@@ -7,123 +7,101 @@ import ProjectProcessSlider from "@/components/ProjectProcessSlider";
 
 
 const projects = {
-    "aura-residence": {
-    title: "Aura Residence",
-    category: "Residential Interior",
-    image: "/images/project-1.jpg",
-   gallery: [
-    "/images/project-1.jpg",
-    "/images/project-2.jpg",
-    "/images/project-3.jpg",
-    ],
+    "the-penthouse": {
+        title: "The Penthouse",
+        category: "Residential Interior",
+        image: "/images/pent1-Living room2.jpg",
 
-   process: [
-    {
-        title: "Before",
-        description:
-        "Existing site condition before design intervention.",
-        image: "/images/project-1.jpg",
+        gallery: [
+          "/images/project-13.jpg",
+          "/images/pent1-Living room1.jpg",
+          "/images/pent1-Lounge1.jpg",
+           "/images/pent1-Lounge2.jpg",
+          "/images/pent1-bedroom1.jpg",
+          "/images/pent1-bedroom2.jpg",
+           "/images/pent1-bedroom3.jpg",
+          "/images/pent1-bath1.jpg",
+        ],
+
+       beforeImages: [
+          "/images/penthouseb2.jpg",
+          "/images/penthouseb3.jpg",
+          "/images/penthouseb1.jpg",
+        ],
+
+        location: "Nigeria",
+        scope: "Full Interior Design",
+        status: "Concept",
+        year: "2026",
+
+        story:
+          "The Penthouse is a complete residential interior project developed across the anteroom, living room, lounge, master bedroom, bathroom and walk-in wardrobe. The design focuses on calm material choices, strong spatial planning, warm lighting and a restrained contemporary atmosphere.",
+
+    },   
+    
+  "the-verde-room": {
+      title: "The Verde Room",
+      category: "Conceptual Residential Interior",
+      image: "/images/verde6.jpg",
+
+      gallery: [
+        "/images/verde4.jpg",
+        "/images/verde7.jpg",
+        "/images/verde8.jpg",
+        "/images/verde5.jpg",
+      ],
+
+      beforeImages: [
+        "/images/verde10.jpg",
+        "/images/verde9.jpg",
+         "/images/verde3.jpg",
+      ],
+
+      location: "Warri, Nigeria",
+      scope: "Bedroom Interior Design",
+      status: "Concept",
+      year: "2026",
+
+      story:
+        "The Verde Room is a compact bedroom concept developed around the challenge of creating comfort, storage and visual refinement within a limited footprint. A restrained neutral palette, warm timber, muted green accents and layered lighting establish a calm atmosphere, while integrated cabinetry and a dedicated media wall make efficient use of the available space. The design demonstrates how a small bedroom can feel considered, functional and visually composed without becoming overcrowded.",
     },
 
-    {
-        title: "Design Process",
-        description:
-        "Spatial planning, material selection and concept development.",
-        image: "/images/project-2.jpg",
+       
+  "terra-residence": {
+      title: "Terra Residence",
+      category: "Conceptual Residential Interior",
+      image: "/images/t5.jpg",
+
+      gallery: [
+        "/images/t26.jpg",
+        "/images/t8.jpg",
+        "/images/t32.jpg",
+        "/images/t5.jpg",
+        "/images/t24.jpg",
+      ],
+
+      beforeImages: [
+        "/images/t1.jpg",
+        "/images/t2.jpg",
+        "/images/t3.jpg",
+      ],
+
+      location: "Warri, Nigeria",
+      scope: "Open-Plan home",
+      status: "Concept",
+      year: "2026",
+
+      story:
+        "Terra Residence explores an open-plan home through warmth, proportion and quiet material continuity. The living, dining and kitchen spaces are conceived as distinct environments while remaining connected through a restrained palette of soft neutrals, natural timber, tactile upholstery and subtle stone textures.",
     },
 
-    {
-        title: "Completed Space",
-        description:
-        "Final interior environment delivered for the client.",
-        image: "/images/project-3.jpg",
-    },
-   ],
-
-    location: "Nigeria",
-    scope: "Interior Design",
-    status: "Concept",
-    year: "2026",
-    story:
-        "Aura Residence explores a calm residential interior shaped through proportion, material restraint and functional planning. The concept focuses on creating a refined living environment where comfort, lighting and spatial flow work together.",
- },
-
-  "terra-bedroom": {
-    title: "Terra Bedroom",
-    category: "Bedroom Design",
-    image: "/images/project-4.jpg",
-    location: "Nigeria",
-    scope: "Bedroom Interior",
-    status: "Concept",
-    year: "2026",
-    story:
-      "Haven Residence explores a calm and contemporary residential environment focused on comfort, proportion and modern living.",
-
-  },
-  "noir-kitchen": {
-    title: "Noir Kitchen",
-    category: "Kitchen Interior",
-    image: "/images/project-7.jpg",
-    location: "Nigeria",
-    scope: "Kitchen Interior",
-    status: "Concept",
-    year: "2026",
-    story:
-      "Haven Residence explores a calm and contemporary residential environment focused on comfort, proportion and modern living.",
-
-  },
-  "linea-living": {
-    title: "Linea Living",
-    category: "Living Room",
-    image: "/images/project-3.jpg",
-    location: "Nigeria",
-    scope: "Living Room Interior",
-    status: "Concept",
-    year: "2026",
-    story:
-      "Haven Residence explores a calm and contemporary residential environment focused on comfort, proportion and modern living.",
-
-  },
-  "forma-suite": {
-    title: "Forma Suite",
-    category: "Hospitality Interior",
-    image: "/images/project-12.jpg",
-    location: "Nigeria",
-    scope: "Hospoitality Interior",
-    status: "Concept",
-    year: "2026",
-    story:
-      "Haven Residence explores a calm and contemporary residential environment focused on comfort, proportion and modern living.",
-
-  },
-  "haven-residence": {
-  title: "Haven Residence",
-  category: "Residential Interior",
-  image: "/images/project-13.jpg",
-
-  location: "Nigeria",
-  scope: "Interior Design",
-  status: "Concept",
-  year: "2026",
-
-  story:
-    "Haven Residence explores a calm and contemporary residential environment focused on comfort, proportion and modern living.",
-
-  gallery: [
-    "/images/project-13.jpg",
-    "/images/project-14.jpg",
-    "/images/project-15.jpg",
-  ],
-},
-};
+   
+  };
 
 const projectOrder = [
-  "aura-residence",
-  "haven-residence",
-  "terra-bedroom",
-  "noir-kitchen",
-  "linea-living",
-  "forma-suite",
+  "the-penthouse",
+  "the-verde-room",
+  "terra-residence",
 ];
 
 export async function generateStaticParams() {
@@ -152,7 +130,7 @@ export async function generateMetadata({
   const imageUrl = `${siteUrl}${project.image}`;
 
   return {
-    title: `${project.title} | Jovata Interiors`,
+    title: `${project.title} | Jovata`,
     description:
       project.story ||
       `Explore ${project.title}, a Jovata Interiors project focused on calm, functional and modern living.`,
@@ -167,7 +145,7 @@ export async function generateMetadata({
         project.story ||
         `Explore ${project.title}, a Jovata Interiors project by Jovata.`,
       url: projectUrl,
-      siteName: "Jovata Interiors",
+      siteName: "Jovata",
       images: [
         {
           url: imageUrl,
@@ -306,12 +284,16 @@ export default async function ProjectPage({
       </div>
     </section>
 
+    {"beforeImages" in project && project.beforeImages && (
+      <ProjectProcessSlider images={project.beforeImages} />
+    )}
+
     {/* Gallery */}
     {"gallery" in project && project.gallery && (
       <section className="mx-auto max-w-[1500px] border-t border-neutral-200 px-6 py-24 md:px-10 lg:px-16">
         <div className="mb-14">
           <p className="text-[13px] uppercase tracking-[0.4em] text-neutral-500">
-            Gallery
+             Explore the completed design.
           </p>
         </div>
 
@@ -337,10 +319,7 @@ export default async function ProjectPage({
       </section>
     )}
 
-    {/* Optional Process */}
-    {"process" in project && project.process && (
-      <ProjectProcessSlider slides={project.process} />
-    )}
+    
 
     {/* CTA */}
     <section className="mx-auto flex max-w-[1500px] items-center justify-between border-t border-neutral-100 px-6 py-4 md:px-10 lg:px-16">

@@ -5,51 +5,25 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Aura Residence",
-    slug: "aura-residence",
-    category: "Residential Interiors",
-    location: "",
-    image: "/images/project-1.jpg",
+    title: "The Penthouse",
+    slug: "the-penthouse",
+    category: "Conceptual Residential Interior",
+    location: "Nigeria",
+    image: "/images/project-13.jpg",
   },
-
   {
-    title: "Haven Residence",
-    slug: "haven-residence",
-    category: "Residential Interiors",
-     location: "",
-    image: "/images/project-1.jpg",
+    title: "The Verde Room",
+    slug: "the-verde-room",
+    category: "Conceptual Residential Interior",
+    location: "Warri, Nigeria",
+    image: "/images/verde5.jpg",
   },
-
   {
-    title: "Terra Bedroom",
-    slug: "terra-bedroom",
-    category: "Bedroom Interiors",
-     location: "",
-    image: "/images/project-4.jpg",
-  },
-
-  {
-    title: "Noir Kitchen",
-    slug: "noir-kitchen",
-    category: "Kitchen Interiors",
-     location: "",
-    image: "/images/project-7.jpg",
-  },
-
-  {
-    title: "Linea Living",
-    slug: "linea-living",
-    category: "Living Room Interiors",
-     location: "",
-    image: "/images/project-3.jpg",
-  },
-
-  {
-    title: "Forma Suite",
-    slug: "forma-suite",
-    category: "Hospitality Interiors",
-     location: "",
-    image: "/images/project-12.jpg",
+    title: "Terra Resdence",
+    slug: "terra-residence",
+    category: "Conceptual Residential Interior",
+    location: "Nigeria",
+    image: "/images/t24.jpg",
   },
 ];
 
@@ -61,12 +35,17 @@ export const metadata = {
 
 
 export default function PortfolioPage() {
-  const aura = projects.find((project) => project.slug === "aura-residence")!;
-  const haven = projects.find((project) => project.slug === "haven-residence")!;
-  const terra = projects.find((project) => project.slug === "terra-bedroom")!;
-  const noir = projects.find((project) => project.slug === "noir-kitchen")!;
-  const linea = projects.find((project) => project.slug === "linea-living")!;
-  const forma = projects.find((project) => project.slug === "forma-suite")!;
+  const penthouse = projects.find(
+    (project) => project.slug === "the-penthouse"
+  )!;
+
+  const verdeRoom = projects.find(
+    (project) => project.slug === "the-verde-room"
+  )!;
+
+  const terraResidence = projects.find(
+    (project) => project.slug === "terra-residence"
+  )!;
   return (
     <main className="min-h-screen bg-white text-black">
       <Navbar />
@@ -90,118 +69,75 @@ export default function PortfolioPage() {
         </div>
       </section>
         
-      <section className="max-w-[1500px] mx-auto px-6 md:px-10 lg:px-16 pt-12 pb-24 border-t border-neutral-200">
+     <section className="max-w-[1500px] mx-auto px-6 md:px-10 lg:px-16 pt-12 pb-24 border-t border-neutral-200">
         <div className="space-y-24">
-          {/* Aura Residence - Featured */}
-          <Link href="/portfolio/aura-residence" className="group block">
+
+          {/* The Penthouse — Featured */}
+          <Link href={`/portfolio/${penthouse.slug}`} className="group block">
             <div className="relative aspect-[16/7] overflow-hidden bg-neutral-100">
               <Image
-                src={aura.image}
-                alt={aura.title}
+                src={penthouse.image}
+                alt={penthouse.title}
                 fill
+                sizes="(max-width: 768px) 100vw, 90vw"
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
               />
             </div>
 
             <div className="mt-6 flex items-end justify-between border-t border-neutral-200 pt-5">
-              <div className="flex items-center gap-3">
+              <div>
                 <h2 className="text-[20px] font-light tracking-[-0.03em]">
-                  {aura.title}
+                  {penthouse.title}
                 </h2>
-                <span className="text-neutral-400 transition group-hover:translate-x-1 group-hover:text-black">
-                   →
-                </span>
+
+                <p className="mt-2 text-[13px] uppercase tracking-[0.18em] text-neutral-400">
+                  {penthouse.category}
+                </p>
               </div>
+
+              <span className="text-neutral-400 transition group-hover:translate-x-1 group-hover:text-black">
+                →
+              </span>
             </div>
           </Link>
 
-          {/* Haven + Terra */}
-          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 max-w-5xl mx-auto">
-            {[haven, terra].map((project) => (
+          {/* Family Residence + City Apartment */}
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+            {[verdeRoom, terraResidence].map((project) => (
               <Link
                 key={project.slug}
                 href={`/portfolio/${project.slug}`}
                 className="group block"
               >
-                <div className="relative aspect-[4/2.4] overflow-hidden bg-neutral-100">
+                <div className="relative aspect-[4/2.8] overflow-hidden bg-neutral-100">
                   <Image
                     src={project.image}
                     alt={project.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, 45vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
 
                 <div className="mt-5 flex items-end justify-between border-t border-neutral-200 pt-4">
-                  <div className="flex items-center gap-3">
+                  <div>
                     <h3 className="text-[16px] font-light tracking-[-0.03em]">
                       {project.title}
                     </h3>
 
-                    <span className="text-neutral-400 transition group-hover:translate-x-1 group-hover:text-black">
-                      →
-                    </span>
+                    <p className="mt-2 text-[12px] uppercase tracking-[0.18em] text-neutral-400">
+                      {project.category}
+                    </p>
                   </div>
+
+                  <span className="text-neutral-400 transition group-hover:translate-x-1 group-hover:text-black">
+                    →
+                  </span>
                 </div>
               </Link>
             ))}
           </div>
 
-          {/* Noir Kitchen - Center Large */}
-          <Link href="/portfolio/noir-kitchen" className="group mx-auto block max-w-4xl">
-            <div className="relative aspect-[16/8] overflow-hidden bg-neutral-100">
-              <Image
-                src={noir.image}
-                alt={noir.title}
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-            </div>
-
-            <div className="mt-6 flex items-end justify-between border-t border-neutral-200 pt-5">
-              <div className="flex items-center gap-3">
-                <h3 className="text-[16px] font-light tracking-[-0.03em]">
-                  {noir.title}
-                </h3>
-
-                <span className="text-neutral-400 transition group-hover:translate-x-1 group-hover:text-black">
-                  →
-                </span>
-              </div>
-            </div>
-          </Link>
-
-          {/* Linea + Forma */}
-          <div className="grid grid-cols-1 gap-30 md:grid-cols-2 max-w-5xl mx-auto">
-            {[linea, forma].map((project) => (
-              <Link
-                key={project.slug}
-                href={`/portfolio/${project.slug}`}
-                className="group block"
-              >
-                <div className="relative aspect-[4/2.4] overflow-hidden bg-neutral-100">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                </div>
-
-                <div className="mt-5 flex items-end justify-between border-t border-neutral-200 pt-4">
-                  <div className="flex items-center gap-3">
-                    <h3 className="text-[16px] font-light tracking-[-0.03em]">
-                      {project.title}
-                    </h3>
-
-                    <span className="text-neutral-400 transition group-hover:translate-x-1 group-hover:text-black">
-                      →
-                    </span>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
         </div>
       </section>
       

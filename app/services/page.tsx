@@ -14,7 +14,7 @@ const ACCENT = "#B19984";
 const services = [
   {
     title: "Interior Design & Spatial Planning",
-    image: "/images/project-9.jpg",
+    image: "/images/project-18.jpg",
     text: "We shape the foundation of the home through layout, flow, proportion and visual direction. Every decision is planned around how the space will be lived in, seen and experienced.",
     bullets: [
       "Space planning & layout refinement",
@@ -25,7 +25,7 @@ const services = [
   },
   {
     title: "Renovation & Interior Transformation",
-    image: "/images/project-12.jpg",
+    image: "/images/project-17.jpg",
     text: "We rework existing spaces with restraint and clarity, improving comfort, finishes and usability while preserving warmth and identity.",
     bullets: [
       "Room redesign and upgrades",
@@ -36,7 +36,7 @@ const services = [
   },
   {
     title: "Furniture, Finishes & Styling",
-    image: "/images/project-4.jpg",
+    image: "/images/project-16.jpg",
     text: "We curate the visible layers of the interior so every piece feels intentional, balanced and connected to the overall design language.",
     bullets: [
       "Furniture selection",
@@ -47,7 +47,7 @@ const services = [
   },
   {
     title: "Smart Living Integration",
-    image: "/images/hero.jpg",
+    image: "/images/project-14.jpg",
     text: "We introduce smart living where it improves comfort, control and daily experience, keeping technology quiet, useful and beautifully integrated.",
     bullets: [
       "Smart lighting planning",
@@ -58,7 +58,7 @@ const services = [
   },
   {
     title: "Design Coordination & Project Support",
-    image: "/images/project-11.jpg",
+    image: "/images/project-15.jpg",
     text: "We support the transition from design idea to finished space through coordination, supplier guidance and design oversight.",
     bullets: [
       "Supplier and artisan coordination",

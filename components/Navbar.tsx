@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navItems = [
@@ -22,11 +23,18 @@ export default function Navbar() {
       {/* Desktop */}
       <div className="hidden h-[96px] items-center justify-between px-8 lg:flex lg:px-25">
         {/* Brand */}
-        <Link
-          href="/"
-          className="text-[28px] font-medium tracking-[0.O8em] text-[#74685E]"
-        >
-          JOVATA
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/images/jovata-mark3.png"
+            alt="Jovata logo"
+            width={70}
+            height={50}
+            priority
+          />
+
+          <span className="text-[28px] font-medium tracking-[0.08em] text-[#74685E]">
+            JOVATA
+          </span>
         </Link>
 
         {/* Center Nav */}

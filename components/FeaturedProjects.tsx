@@ -6,23 +6,24 @@ const ACCENT = "#B19984";
 // Control this value if you want to move the whole section right/left
 const SECTION_SHIFT = "lg:pl-8";
 
-const projects = [
+ const projects = [
   {
-    title: "Aura Residence",
-    slug: "aura-residence",
-    image: "/images/project-1.jpg",
+    title: "The Penthouse",
+    slug: "the-penthouse",
+    image: "/images/pent1-Living room2.jpg",
   },
   {
-    title: "Terra Bedroom",
-    slug: "terra-bedroom",
-    image: "/images/project-11.jpg",
+    title: "The verde room",
+    slug: "the-verde-room",
+    image: "/images/verde6.jpg",
   },
   {
-    title: "Noir Kitchen",
-    slug: "noir-kitchen",
-    image: "/images/project-5.jpg",
+    title: "Terra residence",
+    slug: "terra-residence",
+    image: "/images/t5.jpg",
   },
 ];
+
 
 export default function FeaturedProjects() {
   return (
