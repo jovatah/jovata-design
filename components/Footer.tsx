@@ -169,7 +169,7 @@ export default function Footer() {
 
               {/* LinkedIn */}
               <Link
-                href="https://linkedin.com/jovata.design"
+                href="https://www.linkedin.com/in/francis-ebeje-039410433"
                 target="_blank"
                 aria-label="LinkedIn"
                 className="flex h-12 w-12 items-center justify-center rounded-full border border-neutral-300 text-neutral-700 transition-all duration-300 hover:bg-black hover:text-white hover:border-black"
