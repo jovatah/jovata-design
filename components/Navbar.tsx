@@ -86,7 +86,15 @@ export default function Navbar() {
 
       {/* Mobile */}
       <div className="grid h-[82px] grid-cols-3 items-center px-6 lg:hidden">
-        <div />
+        <Link href="/" className="justify-self-start">
+          <Image
+            src="/images/jovata-mark3.png"
+            alt="Jovata logo"
+            width={46}
+            height={34}
+            priority
+          />
+        </Link>
 
         <Link
           href="/"
