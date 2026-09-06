@@ -27,7 +27,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[76svh] overflow-hidden bg-black md:h-screen">
+    <section className="relative h-[92svh] overflow-hidden bg-black md:h-screen">
       {/* Image slider */}
       <div className="absolute inset-0">
         {heroImages.map((image, index) => (
@@ -52,7 +52,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/18 to-white/10" />
 
       {/* Hero content */}
-      <div className="relative z-10 flex h-[76svh] items-center pt-14 md:h-screen md:pt-16 lg:pt-20 px-6 md:px-10 lg:px-16">
+      <div className="relative z-10 flex h-[80svh] items-center pt-14 md:h-screen md:pt-16 lg:pt-20 px-6 md:px-10 lg:px-16">
         <div className="max-w-[720px] translate-y-12 text-white md:translate-y-0 md:ml-10 lg:ml-12">
           
           {/* Small label now moved above headline */}
@@ -71,7 +71,7 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="mt-7 max-w-[500px] text-[16px] leading-[1.6] tracking-[0.1em] text-white/88 md:text-[15px] md:leading-[1.9]">
+          <p className="mt-7 max-w-[500px] text-[15px] leading-[1.4] tracking-[0.1em] text-white/88 md:text-[15px] md:leading-[1.9]">
             Intelligently planned, we design calm, timeless interiors shaped by
             restraint and personality — creating homes that feel effortless to
             live in.
