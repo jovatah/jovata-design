@@ -4,7 +4,7 @@ const ACCENT = "#B19984";
 
 export default function ContactCTA() {
   return (
-    <section className="mx-auto max-w-[1500px] px-6 py-24 md:px-10 lg:px-16 border-t border-neutral-200">
+    <section className="mx-auto max-w-[1500px] px-6 pt-12 pb-16 md:py-24 md:px-10 lg:px-16 border-t border-neutral-200">
       <div className="mx-auto max-w-[760px] text-center">
         <Link
           href="/contact"

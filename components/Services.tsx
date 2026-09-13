@@ -12,7 +12,7 @@ const pillars = [
 
 export default function Services() {
   return (
-    <section className="px-6 pt-40 pb-26 md:px-10 lg:px-16">
+    <section className="px-6 pt-24 pb-20 md:pt-40 md:pb-26 md:px-10 lg:px-16">
       <div className="mx-auto max-w-[1050px]">
         {/* Intro */}
         <div className="text-center">

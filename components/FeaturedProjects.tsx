@@ -27,10 +27,10 @@ const SECTION_SHIFT = "lg:pl-8";
 
 export default function FeaturedProjects() {
   return (
-    <section className={`pt-20 pb-14 ${SECTION_SHIFT}`}>
+    <section className={`pt-7 pb-14 md:pt-20 ${SECTION_SHIFT}`}>
       <div className="border-t border-neutral-100 mb-12" />
 
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-2 md:mb-12">
         <Link
           href="/portfolio"
           className="inline-block text-[13px] uppercase tracking-[0.32em] transition-colors"
@@ -50,7 +50,7 @@ export default function FeaturedProjects() {
         </Link>
       </div>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid gap-3 md:grid-cols-3 md:gap-8">
         {projects.map((project) => (
           <Link
             href={`/portfolio/${project.slug}`}

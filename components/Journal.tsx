@@ -17,7 +17,7 @@ const articles = [
 export default function Journal() {
   return (
     <section
-      className={`px-6 md:px-10 lg:px-16 pt-24 pb-12 border-t border-neutral-100 ${SECTION_SHIFT}`}
+      className={`px-6 md:px-10 lg:px-16 pt-10 md:pt-24 pb-12 border-t border-neutral-100 ${SECTION_SHIFT}`}
     >
       <div className="max-w-[900px]">
         <Link
@@ -57,7 +57,7 @@ export default function Journal() {
             >
               <Link
                 href={article.href}
-                className="block text-[28px] md:text-[20px] font-light tracking-[-0.03em] text-neutral-700 transition-colors hover:text-[#B19984]"
+                className="block text-[20px] md:text-[18px] font-light tracking-[-0.03em] text-neutral-700 transition-colors hover:text-[#B19984]"
               >
                 {article.title}
               </Link>

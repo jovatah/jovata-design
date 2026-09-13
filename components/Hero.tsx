@@ -71,7 +71,7 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="mt-7 max-w-[500px] text-[15px] leading-[1.4] tracking-[0.1em] text-white/88 md:text-[15px] md:leading-[1.9]">
+          <p className="mt-8 max-w-[500px] text-[14px] leading-[1.5] tracking-[0.04em] text-white/88 md:mt-7 md:text-[15px] md:leading-[1.4] md:tracking-[0.1em]">
             Intelligently planned, we design calm, timeless interiors shaped by
             restraint and personality — creating homes that feel effortless to
             live in.
